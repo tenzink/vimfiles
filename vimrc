@@ -64,8 +64,6 @@ set incsearch
 set ignorecase
 set smartcase
 
-
-
 " ================ Encoding ================
 
 set encoding=utf-8
@@ -79,3 +77,7 @@ map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark 
 map <leader>nf :NERDTreeFind<cr>
 
+
+" ================ Colors ============================
+
+colorscheme molokai
