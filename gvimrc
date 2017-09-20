@@ -6,3 +6,5 @@ set guioptions-=m
 set visualbell t_vb=
 
 colorscheme desert
+
+au GUIEnter * simalt ~x
