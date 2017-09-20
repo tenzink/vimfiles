@@ -21,9 +21,11 @@ call plug#begin('~/vimfiles/plugged')
 Plug 'tpope/vim-fugitive'
 Plug 'gregsexton/gitv', {'on': ['Gitv']}
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'vim-scripts/mru.vim', { 'on': 'MRU' }
+Plug 'vim-scripts/mru.vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'vim-scripts/bufexplorer.zip'
+Plug 'elzr/vim-json'
+Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 
 call plug#end()
 
@@ -80,4 +82,10 @@ map <leader>nf :NERDTreeFind<cr>
 
 " ================ Colors ============================
 
-colorscheme molokai
+"colorscheme molokai
+"colorscheme monokai
+"set background=light
+"colorscheme solarized
+"colorscheme peacock
+"colorscheme mud
+colorscheme desert
