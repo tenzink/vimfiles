@@ -55,9 +55,11 @@ set nowb
 set wildmode=list:longest,full
 set wildmenu
 
-" ================ Search =====================
+" ================ Other =====================
 
 set nojoinspaces
+set history=1000
+set shortmess+=Ix
 
 " ================ Search =====================
 
@@ -70,6 +72,10 @@ set smartcase
 
 set encoding=utf-8
 set fileencodings=utf-8,cp1251
+set keymap=russian-jcukenwin
+set iminsert=0
+set imsearch=0
+highlight lCursor guifg=NONE guibg=Cyan
 
 " ================ Custom keybindings ================
 
