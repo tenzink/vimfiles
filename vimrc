@@ -22,7 +22,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'gregsexton/gitv', {'on': ['Gitv']}
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'vim-scripts/mru.vim'
-Plug 'terryma/vim-multiple-cursors'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'vim-scripts/bufexplorer.zip'
 Plug 'elzr/vim-json'
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
