@@ -26,6 +26,7 @@ Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 Plug 'vim-scripts/bufexplorer.zip'
 Plug 'elzr/vim-json'
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
