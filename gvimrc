@@ -1,5 +1,5 @@
 " Set font
-set guifont=Consolas:h13:cRUSSIAN:qDRAFT
+set guifont=Consolas:h11:cRUSSIAN:qDRAFT
 
 " No menu, no toolbar
 set guioptions-=T
