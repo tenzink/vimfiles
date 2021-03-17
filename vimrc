@@ -61,6 +61,7 @@ set wildmenu
 set nojoinspaces
 set history=1000
 set shortmess+=Ix
+set showmatch
 
 " ================ Search =====================
 
@@ -86,6 +87,25 @@ map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark 
 map <leader>nf :NERDTreeFind<cr>
 
+" ================ Status line =======================
+
+set laststatus=2
+set statusline=
+set statusline+=%-3.3n\                     " buffer number
+set statusline+=%F\                          " filename
+set statusline+=%h%m%r%w                     " status flags
+set statusline+=%y                           " file type
+set statusline+=[%{&fileencoding?&fileencoding:&encoding}]
+set statusline+=[%{&fileformat}]
+set statusline+=%=                           " right align remainder
+set statusline+=%o'0x%-8B                       " character value
+set statusline+=%-14(%l:%c%V%)               " line, character
+set statusline+=%<%P                         " file position
+
+" ================ NERDTree ==========================
+
+let NERDTreeNaturalSort=1
+let NERDTreeWinPos="right"
 
 " ================ Colors ============================
 
