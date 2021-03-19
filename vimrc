@@ -86,6 +86,7 @@ map <leader>f :MRU<cr>
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark 
 map <leader>nf :NERDTreeFind<cr>
+map <leader>cd :cd %:p:h<cr>:pwd<cr>
 
 " ================ Status line =======================
 
@@ -106,6 +107,10 @@ set statusline+=%<%P                         " file position
 
 let NERDTreeNaturalSort=1
 let NERDTreeWinPos="right"
+
+" ================ Custom commands ===================
+
+command CDC cd %:p:h
 
 " ================ Colors ============================
 
