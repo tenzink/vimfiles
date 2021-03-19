@@ -27,6 +27,7 @@ Plug 'vim-scripts/bufexplorer.zip'
 Plug 'elzr/vim-json'
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 Plug 'rust-lang/rust.vim'
+Plug 'mileszs/ack.vim'
 
 call plug#end()
 
