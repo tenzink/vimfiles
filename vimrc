@@ -35,6 +35,7 @@ Plug 'morhetz/gruvbox'
 Plug 'gosukiwi/vim-atom-dark'
 Plug 'jacoborus/tender.vim'
 Plug 'mhartington/oceanic-next'
+Plug 'jnurmine/Zenburn'
 
 call plug#end()
 
