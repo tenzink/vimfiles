@@ -28,6 +28,13 @@ Plug 'elzr/vim-json'
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
 Plug 'rust-lang/rust.vim'
 Plug 'mileszs/ack.vim'
+Plug 'junegunn/seoul256.vim'
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
+Plug 'morhetz/gruvbox'
+Plug 'gosukiwi/vim-atom-dark'
+Plug 'jacoborus/tender.vim'
+Plug 'mhartington/oceanic-next'
 
 call plug#end()
 
@@ -82,12 +89,16 @@ highlight lCursor guifg=NONE guibg=Cyan
 
 " ================ Custom keybindings ================
 
-map <leader>o :BufExplorer<cr>
+map <leader>b :BufExplorer<cr>
 map <leader>f :MRU<cr>
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark 
 map <leader>nf :NERDTreeFind<cr>
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
+map <leader>a :Ack<space>
+map <leader>o :Files<cr>
+map <leader>l :Lines<cr>
+map <leader>L :Lines!<cr>
 
 " ================ Status line =======================
 
@@ -121,4 +132,9 @@ command CDC cd %:p:h
 "colorscheme solarized
 "colorscheme peacock
 "colorscheme mud
-colorscheme desert
+"colorscheme seoul256
+"colorscheme desert
+colorscheme gruvbox
+"colorscheme tender
+"colorscheme atom-dark
+"colorscheme OceanicNext
