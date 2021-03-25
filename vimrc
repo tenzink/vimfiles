@@ -36,6 +36,11 @@ Plug 'gosukiwi/vim-atom-dark'
 Plug 'jacoborus/tender.vim'
 Plug 'mhartington/oceanic-next'
 Plug 'jnurmine/Zenburn'
+Plug 'danilo-augusto/vim-afterglow'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'tomtom/tlib_vim'
+Plug 'garbas/vim-snipmate'
+Plug 'honza/vim-snippets'
 
 call plug#end()
 
@@ -90,16 +95,17 @@ highlight lCursor guifg=NONE guibg=Cyan
 
 " ================ Custom keybindings ================
 
+map <leader>L :Lines!<cr>
+map <leader>ag :Ag<cr>
 map <leader>b :BufExplorer<cr>
+map <leader>cd :cd %:p:h<cr>:pwd<cr>
 map <leader>f :MRU<cr>
-map <leader>nn :NERDTreeToggle<cr>
+map <leader>l :Lines<cr>
 map <leader>nb :NERDTreeFromBookmark 
 map <leader>nf :NERDTreeFind<cr>
-map <leader>cd :cd %:p:h<cr>:pwd<cr>
-map <leader>a :Ack<space>
+map <leader>nn :NERDTreeToggle<cr>
 map <leader>o :Files<cr>
-map <leader>l :Lines<cr>
-map <leader>L :Lines!<cr>
+map <leader>rg :Rg<cr>
 
 " ================ Status line =======================
 
@@ -121,6 +127,15 @@ set statusline+=%<%P                         " file position
 let NERDTreeNaturalSort=1
 let NERDTreeWinPos="right"
 
+
+" ================ SnipMate ==========================
+" 
+let g:snipMate = { 'snippet_version' : 1 }
+
+command!      -bang -nargs=* Rga
+  \ call fzf#vim#grep("rga --column --line-number --no-heading --color=always --smart-case -- ".shellescape(<q-args>),
+  \ 1, fzf#vim#with_preview(), <bang>0)
+
 " ================ Custom commands ===================
 
 command CDC cd %:p:h
@@ -139,3 +154,4 @@ colorscheme gruvbox
 "colorscheme tender
 "colorscheme atom-dark
 "colorscheme OceanicNext
+"colorscheme afterglow
