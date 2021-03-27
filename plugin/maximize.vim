@@ -19,7 +19,12 @@ let g:loaded_maximize=1
 let s:save_cpoptions=&cpoptions
 set cpoptions&vim
 " }}}
-let s:dllfile=expand('<sfile>:p:h').'/maximize.dll'
+if has("win32")
+  let s:dllfile=expand('<sfile>:p:h').'/maximize.dll'
+endif
+if has("win64")
+  let s:dllfile=expand('<sfile>:p:h').'/maximize64.dll'
+endif
 autocmd GUIEnter * call libcallnr(s:dllfile, 'Maximize', 1)
 " Restore the saved compatibility options {{{
 let &cpoptions=s:save_cpoptions
