@@ -18,25 +18,18 @@ let mapleader=","
 
 call plug#begin('~/vimfiles/plugged')
 
-Plug 'tpope/vim-fugitive'
-Plug 'gregsexton/gitv', {'on': ['Gitv']}
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'vim-scripts/mru.vim'
-Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-Plug 'vim-scripts/bufexplorer.zip'
 Plug 'elzr/vim-json'
-Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
-Plug 'rust-lang/rust.vim'
-Plug 'mileszs/ack.vim'
-Plug 'junegunn/seoul256.vim'
+Plug 'gregsexton/gitv', {'on': ['Gitv']}
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
-Plug 'morhetz/gruvbox'
-Plug 'gosukiwi/vim-atom-dark'
-Plug 'jacoborus/tender.vim'
-Plug 'mhartington/oceanic-next'
-Plug 'jnurmine/Zenburn'
-Plug 'danilo-augusto/vim-afterglow'
+Plug 'junegunn/goyo.vim', { 'on': 'Goyo' }
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'mileszs/ack.vim'
+Plug 'rust-lang/rust.vim'
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tpope/vim-fugitive'
+Plug 'vim-scripts/bufexplorer.zip'
+Plug 'vim-scripts/mru.vim'
 if (has('python') || has('python3'))
     Plug 'SirVer/ultisnips'
 else
@@ -45,6 +38,18 @@ else
     Plug 'tomtom/tlib_vim' "required for snipmate
 endif
 Plug 'honza/vim-snippets'
+" color schemes
+Plug 'altercation/vim-colors-solarized'
+Plug 'danilo-augusto/vim-afterglow'
+Plug 'gosukiwi/vim-atom-dark'
+Plug 'jacoborus/tender.vim'
+Plug 'jnurmine/Zenburn'
+Plug 'junegunn/seoul256.vim'
+Plug 'mhartington/oceanic-next'
+Plug 'morhetz/gruvbox'
+Plug 'sickill/vim-monokai'
+Plug 'tomasr/molokai'
+" end colorschemes
 
 call plug#end()
 
