@@ -37,8 +37,6 @@ Plug 'jacoborus/tender.vim'
 Plug 'mhartington/oceanic-next'
 Plug 'jnurmine/Zenburn'
 Plug 'danilo-augusto/vim-afterglow'
-Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'tomtom/tlib_vim'
 if (has('python') || has('python3'))
     Plug 'SirVer/ultisnips'
 else
