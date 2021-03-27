@@ -39,7 +39,13 @@ Plug 'jnurmine/Zenburn'
 Plug 'danilo-augusto/vim-afterglow'
 Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'tomtom/tlib_vim'
-Plug 'garbas/vim-snipmate'
+if (has('python') || has('python3'))
+    Plug 'SirVer/ultisnips'
+else
+    Plug 'garbas/vim-snipmate'
+    Plug 'MarcWeber/vim-addon-mw-utils' "required for snipmate
+    Plug 'tomtom/tlib_vim' "required for snipmate
+endif
 Plug 'honza/vim-snippets'
 
 call plug#end()
