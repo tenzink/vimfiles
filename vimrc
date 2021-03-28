@@ -38,6 +38,8 @@ else
     Plug 'tomtom/tlib_vim' "required for snipmate
 endif
 Plug 'honza/vim-snippets'
+Plug 'mhinz/vim-startify'
+
 " color schemes
 Plug 'altercation/vim-colors-solarized'
 Plug 'danilo-augusto/vim-afterglow'
@@ -50,6 +52,9 @@ Plug 'morhetz/gruvbox'
 Plug 'sickill/vim-monokai'
 Plug 'tomasr/molokai'
 " end colorschemes
+
+"dev"
+Plug 'tenzink/vim-fullscreen', { 'branch': 'noWin32' }
 
 call plug#end()
 

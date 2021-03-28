@@ -7,3 +7,5 @@ set guioptions-=m
 
 " No beeps & blinking
 set visualbell t_vb=
+
+au GUIEnter * :MaximizeWindow
