@@ -99,6 +99,7 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+set scrolloff=5
 
 " ================ Encoding ================
 
