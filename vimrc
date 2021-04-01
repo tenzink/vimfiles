@@ -40,6 +40,7 @@ endif
 Plug 'honza/vim-snippets'
 Plug 'mhinz/vim-startify'
 Plug 'adah1972/vim-copy-as-rtf'
+Plug 'habamax/vim-asciidoctor'
 
 " color schemes
 Plug 'altercation/vim-colors-solarized'
@@ -150,6 +151,10 @@ let g:snipMate = { 'snippet_version' : 1 }
 command!      -bang -nargs=* Rga
   \ call fzf#vim#grep("rga --column --line-number --no-heading --color=always --smart-case -- ".shellescape(<q-args>),
   \ 1, fzf#vim#with_preview(), <bang>0)
+
+" ================ AsciiDoctor =======================
+
+let g:asciidoctor_fenced_languages = ['yaml', 'json']
 
 " ================ Custom commands ===================
 
