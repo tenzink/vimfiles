@@ -157,6 +157,24 @@ command!      -bang -nargs=* Rga
 
 let g:asciidoctor_fenced_languages = ['yaml', 'json']
 
+
+
+" Function to create buffer local mappings and add default compiler
+fun! AsciidoctorMappings()
+    nnoremap <buffer> <leader>o :AsciidoctorOpenHTML<CR>
+    nnoremap <buffer> <leader>c :Asciidoctor2HTML<CR>
+    nnoremap <buffer> <leader>p :AsciidoctorPasteImage<CR>
+    compiler asciidoctor2html
+endfun
+
+" Call AsciidoctorMappings for all `*.adoc` and `*.asciidoc` files
+augroup asciidoctor
+    au!
+    au BufEnter *.adoc,*.asciidoc call AsciidoctorMappings()
+augroup END
+
+
+
 " ================ Custom commands ===================
 
 command CDC cd %:p:h
