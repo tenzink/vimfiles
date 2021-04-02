@@ -44,6 +44,7 @@ Plug 'habamax/vim-asciidoctor'
 Plug 'rhysd/vim-grammarous'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-syntastic/syntastic'
 
 " color schemes
 Plug 'altercation/vim-colors-solarized'
@@ -163,8 +164,6 @@ command!      -bang -nargs=* Rga
 
 let g:asciidoctor_fenced_languages = ['yaml', 'json']
 
-
-
 " Function to create buffer local mappings and add default compiler
 fun! AsciidoctorMappings()
     nnoremap <buffer> <leader>o :AsciidoctorOpenHTML<CR>
@@ -179,11 +178,18 @@ augroup asciidoctor
     au BufEnter *.adoc,*.asciidoc call AsciidoctorMappings()
 augroup END
 
-
-
 " ================ Custom commands ===================
 
 command CDC cd %:p:h
+
+" ================ Syntastic =========================
+"
+let g:syntastic_asciidoc_asciidoc_exec = "asciidoctor"
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 
 " ================ Colors ============================
 
