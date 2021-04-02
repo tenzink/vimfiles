@@ -44,6 +44,7 @@ Plug 'habamax/vim-asciidoctor'
 
 " color schemes
 Plug 'altercation/vim-colors-solarized'
+Plug 'arcticicestudio/nord-vim'
 Plug 'danilo-augusto/vim-afterglow'
 Plug 'gosukiwi/vim-atom-dark'
 Plug 'jacoborus/tender.vim'
