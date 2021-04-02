@@ -41,6 +41,7 @@ Plug 'honza/vim-snippets'
 Plug 'mhinz/vim-startify'
 Plug 'adah1972/vim-copy-as-rtf'
 Plug 'habamax/vim-asciidoctor'
+Plug 'rhysd/vim-grammarous'
 
 " color schemes
 Plug 'altercation/vim-colors-solarized'
