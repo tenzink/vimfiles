@@ -45,6 +45,7 @@ Plug 'rhysd/vim-grammarous'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-syntastic/syntastic'
+Plug 'petRUShka/vim-gap'
 
 " color schemes
 Plug 'altercation/vim-colors-solarized'
