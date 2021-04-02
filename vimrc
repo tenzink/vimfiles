@@ -123,7 +123,7 @@ map <leader>b :BufExplorer<cr>
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
 map <leader>f :MRU<cr>
 map <leader>l :Lines<cr>
-map <leader>nb :NERDTreeFromBookmark 
+map <leader>nb :NERDTreeFromBookmark
 map <leader>nf :NERDTreeFind<cr>
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>o :Files<cr>
@@ -153,7 +153,7 @@ let NERDTreeWinPos="right"
 
 
 " ================ SnipMate ==========================
-" 
+"
 let g:snipMate = { 'snippet_version' : 1 }
 
 command!      -bang -nargs=* Rga
