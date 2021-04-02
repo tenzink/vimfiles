@@ -42,6 +42,8 @@ Plug 'mhinz/vim-startify'
 Plug 'adah1972/vim-copy-as-rtf'
 Plug 'habamax/vim-asciidoctor'
 Plug 'rhysd/vim-grammarous'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " color schemes
 Plug 'altercation/vim-colors-solarized'
@@ -140,6 +142,8 @@ set statusline+=%=                           " right align remainder
 set statusline+=%o'0x%-8B                       " character value
 set statusline+=%-14(%l:%c%V%)               " line, character
 set statusline+=%<%P                         " file position
+
+let g:airline#extensions#tabline#enabled = 1
 
 " ================ NERDTree ==========================
 
