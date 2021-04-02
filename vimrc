@@ -182,9 +182,10 @@ command CDC cd %:p:h
 
 " ================ Colors ============================
 
+set background=light
+
 "colorscheme molokai
 "colorscheme monokai
-"set background=light
 "colorscheme solarized
 "colorscheme peacock
 "colorscheme mud
