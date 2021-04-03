@@ -57,6 +57,7 @@ Plug 'jnurmine/Zenburn'
 Plug 'junegunn/seoul256.vim'
 Plug 'mhartington/oceanic-next'
 Plug 'morhetz/gruvbox'
+Plug 'sainnhe/sonokai'
 Plug 'sickill/vim-monokai'
 Plug 'tomasr/molokai'
 " end colorschemes
@@ -194,17 +195,23 @@ command CDC cd %:p:h
 
 " ================ Colors ============================
 
+let g:sonokai_style = 'shusia'
+let g:sonokai_enable_italic = 1
+let g:sonokai_disable_italic_comment = 1
+
+
 set background=light
 
-"colorscheme molokai
-"colorscheme monokai
-"colorscheme solarized
-"colorscheme peacock
-"colorscheme mud
-"colorscheme seoul256
-"colorscheme desert
-colorscheme gruvbox
-"colorscheme tender
-"colorscheme atom-dark
 "colorscheme OceanicNext
 "colorscheme afterglow
+"colorscheme atom-dark
+"colorscheme desert
+colorscheme gruvbox
+"colorscheme molokai
+"colorscheme monokai
+"colorscheme mud
+"colorscheme peacock
+"colorscheme seoul256
+"colorscheme solarized
+"colorscheme sonokai
+"colorscheme tender
