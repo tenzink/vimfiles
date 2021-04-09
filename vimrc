@@ -47,6 +47,8 @@ Plug 'vim-airline/vim-airline-themes'
 " Plug 'vim-syntastic/syntastic'
 Plug 'petRUShka/vim-gap'
 Plug 'chrisbra/NrrwRgn'
+Plug 'tpope/vim-surround'
+Plug 'majutsushi/tagbar'
 
 " color schemes
 Plug 'altercation/vim-colors-solarized'
