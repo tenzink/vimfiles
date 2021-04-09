@@ -228,12 +228,12 @@ set background=light
 "colorscheme afterglow
 "colorscheme atom-dark
 "colorscheme desert
-colorscheme gruvbox
+"colorscheme gruvbox
 "colorscheme molokai
 "colorscheme monokai
 "colorscheme mud
 "colorscheme peacock
 "colorscheme seoul256
 "colorscheme solarized
-"colorscheme sonokai
+colorscheme sonokai
 "colorscheme tender
