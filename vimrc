@@ -133,7 +133,8 @@ map <leader>nf :NERDTreeFind<cr>
 map <leader>nn :NERDTreeToggle<cr>
 map <leader>o :Files<cr>
 map <leader>rg :Rg<cr>
-map <C-Tab> :e#<cr>
+map <C-Tab> :b!#<cr>
+
 
 " ================ Status line =======================
 
