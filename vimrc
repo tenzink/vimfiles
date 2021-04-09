@@ -135,6 +135,7 @@ map <leader>o :Files<cr>
 map <leader>rg :Rg<cr>
 map <C-Tab> :b!#<cr>
 
+nmap <F8> :TagbarToggle<cr>
 
 " ================ Status line =======================
 
