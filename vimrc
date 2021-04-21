@@ -49,6 +49,9 @@ Plug 'petRUShka/vim-gap'
 Plug 'chrisbra/NrrwRgn'
 Plug 'tpope/vim-surround'
 Plug 'majutsushi/tagbar'
+Plug 'xolox/vim-misc'
+Plug 'xolox/vim-colorscheme-switcher'
+Plug 'xolox/vim-notes'
 
 " color schemes
 Plug 'altercation/vim-colors-solarized'
