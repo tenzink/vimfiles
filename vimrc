@@ -52,6 +52,7 @@ Plug 'majutsushi/tagbar'
 Plug 'xolox/vim-misc'
 Plug 'xolox/vim-colorscheme-switcher'
 Plug 'xolox/vim-notes'
+Plug 'lervag/vimtex'
 
 " color schemes
 Plug 'altercation/vim-colors-solarized'
