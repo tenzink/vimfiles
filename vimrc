@@ -210,6 +210,8 @@ augroup END
 
 command CDC cd %:p:h
 
+let g:startify_fortune_use_unicode=1
+
 " ================ Syntastic =========================
 "
 " let g:syntastic_asciidoc_asciidoc_exec = "asciidoctor"
