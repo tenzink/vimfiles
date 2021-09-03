@@ -39,7 +39,6 @@ else
 endif
 Plug 'honza/vim-snippets'
 Plug 'mhinz/vim-startify'
-Plug 'adah1972/vim-copy-as-rtf'
 Plug 'habamax/vim-asciidoctor'
 Plug 'rhysd/vim-grammarous'
 Plug 'vim-airline/vim-airline'
