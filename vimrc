@@ -16,7 +16,7 @@ let mapleader=","
 
 " =============== Plugin Initialization ===============
 
-call plug#begin('~/vimfiles/plugged')
+call plug#begin()
 
 Plug 'elzr/vim-json'
 Plug 'gregsexton/gitv', {'on': ['Gitv']}
